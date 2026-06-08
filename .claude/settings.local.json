@@ -20,7 +20,14 @@
       "Bash(command -v nvm)",
       "Bash(/opt/homebrew/bin/brew install *)",
       "Bash(export PATH=\"/opt/homebrew/bin:$PATH\")",
-      "Bash(npm --version)"
+      "Bash(npm --version)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "Bash(pkill -f \"next dev\")",
+      "Bash(mkdir -p /Users/soosoo/Desktop/sawsanism/.claude)",
+      "mcp__Claude_Preview__preview_start"
     ]
   }
 }

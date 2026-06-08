@@ -1,26 +1,77 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FAF7F2;
+  --foreground: #3D3229;
+  --accent: #B8A590;
+  --accent-light: #D4C5B2;
+  --card-bg: #FFFFFF;
+  --card-border: #E8E0D6;
+  --muted: #8C7B6B;
+  --hero-overlay: rgba(250, 247, 242, 0.85);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-accent-light: var(--accent-light);
+  --color-card-bg: var(--card-bg);
+  --color-card-border: var(--card-border);
+  --color-muted: var(--muted);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.dark {
+  --background: #1A1612;
+  --foreground: #E8E0D6;
+  --accent: #B8A590;
+  --accent-light: #4A3F35;
+  --card-bg: #241F1A;
+  --card-border: #3D3229;
+  --muted: #A09080;
+  --hero-overlay: rgba(26, 22, 18, 0.85);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+::selection {
+  background-color: var(--accent);
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-light);
+  border-radius: 3px;
+}
+
+.portfolio-scroll::-webkit-scrollbar {
+  height: 4px;
+}
+
+.portfolio-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.portfolio-scroll::-webkit-scrollbar-thumb {
+  background: var(--accent-light);
+  border-radius: 2px;
 }
