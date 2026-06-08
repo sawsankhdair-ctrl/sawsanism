@@ -12,7 +12,6 @@ const images = [
   { src: `${BASE}/images/fb-story.png`,       alt: "Facebook Story Design" },
   { src: `${BASE}/images/magazine.png`,       alt: "Magazine Design" },
   { src: `${BASE}/images/poster.png`,         alt: "Poster Design" },
-  { src: `${BASE}/images/outdoor-poster.png`, alt: "Outdoor Poster Design" },
   { src: `${BASE}/images/photo-1.jpg`,        alt: "Photography" },
   { src: `${BASE}/images/photo-2.jpg`,        alt: "Photography" },
   { src: `${BASE}/images/photo-3.jpg`,        alt: "Photography" },
