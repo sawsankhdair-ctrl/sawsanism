@@ -27,7 +27,8 @@
       "mcp__Claude_in_Chrome__tabs_context_mcp",
       "Bash(pkill -f \"next dev\")",
       "Bash(mkdir -p /Users/soosoo/Desktop/sawsanism/.claude)",
-      "mcp__Claude_Preview__preview_start"
+      "mcp__Claude_Preview__preview_start",
+      "Bash(git add *)"
     ]
   }
 }

@@ -5,22 +5,19 @@ import { useState, useRef } from "react";
 import Image from "next/image";
 
 const images = [
-  { src: "https://i.ibb.co/TDBKFXTr/FB-post.png", alt: "Facebook Post Design" },
-  { src: "https://i.ibb.co/rK0tkL53/Billboard.png", alt: "Billboard Design" },
-  { src: "https://i.ibb.co/Gfrj508F/FB-story.png", alt: "Facebook Story Design" },
-  { src: "https://i.ibb.co/V0ZT5K0R/Magazine.png", alt: "Magazine Design" },
-  { src: "https://i.ibb.co/mCfY8Pmr/poster.png", alt: "Poster Design" },
-  { src: "https://i.ibb.co/W4xsGYt7/fig.png", alt: "Fig Design" },
-  { src: "https://i.ibb.co/yH17sLt/Fruitcy-package.png", alt: "Fruitcy Package Design" },
-  { src: "https://i.ibb.co/9ktdmTd8/ice-cream-packages.png", alt: "Ice Cream Packages" },
-  { src: "https://i.ibb.co/dwpWC3Pt/lemon.png", alt: "Lemon Design" },
-  { src: "https://i.ibb.co/W4qWDG7K/Mockup1.png", alt: "Mockup 1" },
-  { src: "https://i.ibb.co/JRk43hMs/Mockup2.png", alt: "Mockup 2" },
-  { src: "https://i.ibb.co/0j1JBJSJ/Mockup3.png", alt: "Mockup 3" },
-  { src: "https://i.ibb.co/HTYhfLFB/outside-package-die-cut.png", alt: "Package Die Cut" },
-  { src: "https://i.ibb.co/FkqJpnHW/peach.png", alt: "Peach Design" },
-  { src: "https://i.ibb.co/d4P4vLvS/pomegranate.png", alt: "Pomegranate Design" },
-  { src: "https://i.ibb.co/LzF2Vpgd/strawberry.png", alt: "Strawberry Design" },
+  { src: "/images/fb-post.png",        alt: "Facebook Post Design" },
+  { src: "/images/billboard.png",      alt: "Billboard Design" },
+  { src: "/images/fb-story.png",       alt: "Facebook Story Design" },
+  { src: "/images/magazine.png",       alt: "Magazine Design" },
+  { src: "/images/poster.png",         alt: "Poster Design" },
+  { src: "/images/outdoor-poster.png", alt: "Outdoor Poster Design" },
+  { src: "/images/photo-1.jpg",        alt: "Photography" },
+  { src: "/images/photo-2.jpg",        alt: "Photography" },
+  { src: "/images/photo-3.jpg",        alt: "Photography" },
+  { src: "/images/img-0011.jpg",       alt: "Photo" },
+  { src: "/images/img-0418.jpg",       alt: "Photo" },
+  { src: "/images/img-1544.jpg",       alt: "Photo" },
+  { src: "/images/img-9729.jpg",       alt: "Photo" },
 ];
 
 export default function Portfolio() {
@@ -98,7 +95,6 @@ export default function Portfolio() {
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                   sizes="400px"
-                  unoptimized
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
