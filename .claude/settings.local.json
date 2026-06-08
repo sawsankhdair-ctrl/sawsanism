@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(anthropic-skills:docx)",
+      "Skill(anthropic-skills:docx:*)",
+      "Bash(extract-text \"/Users/soosoo/Desktop/Press and Media/Final/مواد صحفية/Sawsan Abukhudair Final Article.docx\")",
+      "Bash(pandoc \"/Users/soosoo/Desktop/Press and Media/Final/مواد صحفية/Sawsan Abukhudair Final Article.docx\" -t plain)",
+      "Bash(extract-text \"/Users/soosoo/Desktop/Press and Media/Final/مواد صحفية/Sawsan Abukhudair_Journalistic Writing_Final_15 06 2025.docx\")",
+      "Bash(pandoc \"/Users/soosoo/Desktop/Press and Media/Final/مواد صحفية/Sawsan Abukhudair_Journalistic Writing_Final_15 06 2025.docx\" -t plain)",
+      "Bash(extract-text \"/Users/soosoo/Desktop/Press and Media/Final/مواد صحفية/اقتباسات لبحوث علمية مقارنة.docx\")",
+      "Bash(pandoc \"/Users/soosoo/Desktop/Press and Media/Final/مواد صحفية/اقتباسات لبحوث علمية مقارنة.docx\" -t plain)",
+      "Bash(extract-text \"/Users/soosoo/Desktop/Press and Media/Final/مواد صحفية/سرد قصصي.docx\")",
+      "Bash(pandoc \"/Users/soosoo/Desktop/Press and Media/Final/مواد صحفية/سرد قصصي.docx\" -t plain)",
+      "Bash(python3 -c ' *)",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm)",
+      "Read(//usr/local/bin/**)",
+      "Read(//opt/homebrew/bin/**)",
+      "Bash(command -v fnm)",
+      "Bash(command -v volta)",
+      "Bash(command -v nvm)",
+      "Bash(/opt/homebrew/bin/brew install *)",
+      "Bash(export PATH=\"/opt/homebrew/bin:$PATH\")",
+      "Bash(npm --version)"
+    ]
+  }
+}
