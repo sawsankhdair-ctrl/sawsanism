@@ -4,20 +4,22 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState, useRef } from "react";
 import Image from "next/image";
 
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 const images = [
-  { src: "/images/fb-post.png",        alt: "Facebook Post Design" },
-  { src: "/images/billboard.png",      alt: "Billboard Design" },
-  { src: "/images/fb-story.png",       alt: "Facebook Story Design" },
-  { src: "/images/magazine.png",       alt: "Magazine Design" },
-  { src: "/images/poster.png",         alt: "Poster Design" },
-  { src: "/images/outdoor-poster.png", alt: "Outdoor Poster Design" },
-  { src: "/images/photo-1.jpg",        alt: "Photography" },
-  { src: "/images/photo-2.jpg",        alt: "Photography" },
-  { src: "/images/photo-3.jpg",        alt: "Photography" },
-  { src: "/images/img-0011.jpg",       alt: "Photo" },
-  { src: "/images/img-0418.jpg",       alt: "Photo" },
-  { src: "/images/img-1544.jpg",       alt: "Photo" },
-  { src: "/images/img-9729.jpg",       alt: "Photo" },
+  { src: `${BASE}/images/fb-post.png`,        alt: "Facebook Post Design" },
+  { src: `${BASE}/images/billboard.png`,      alt: "Billboard Design" },
+  { src: `${BASE}/images/fb-story.png`,       alt: "Facebook Story Design" },
+  { src: `${BASE}/images/magazine.png`,       alt: "Magazine Design" },
+  { src: `${BASE}/images/poster.png`,         alt: "Poster Design" },
+  { src: `${BASE}/images/outdoor-poster.png`, alt: "Outdoor Poster Design" },
+  { src: `${BASE}/images/photo-1.jpg`,        alt: "Photography" },
+  { src: `${BASE}/images/photo-2.jpg`,        alt: "Photography" },
+  { src: `${BASE}/images/photo-3.jpg`,        alt: "Photography" },
+  { src: `${BASE}/images/img-0011.jpg`,       alt: "Photo" },
+  { src: `${BASE}/images/img-0418.jpg`,       alt: "Photo" },
+  { src: `${BASE}/images/img-1544.jpg`,       alt: "Photo" },
+  { src: `${BASE}/images/img-9729.jpg`,       alt: "Photo" },
 ];
 
 export default function Portfolio() {
